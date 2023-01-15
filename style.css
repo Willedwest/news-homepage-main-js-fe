@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  /* Primary colors  */
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+
+  /* Neutral colors */
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav > ul > li > a  {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+nav > ul > li > a:hover  {
+  color: var(--Soft-red);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.group1 {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.firstSec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 69%;
+}
+
+.heroImage {
+  width: 100%;
+}
+
+.firstSec > section {
+  display: flex;
+  gap: 2rem;
+}
+
+.firstSec > section > h1,
+.firstSec > section > div {
+  flex: 1;
+}
+
+.firstSec > section > h1 {
+  color: var(--Very-dark-blue);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+
+.firstSec > section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.firstSec > section > div > p{
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.readMore {
+  align-self: flex-start;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.readMore:hover {
+  background-color: var(--Very-dark-blue);
+}
+
+.secondSec {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--Very-dark-blue);
+  color: var(--Grayish-blue);
+  padding: 1.8rem 1.5rem;
+  justify-content: space-between;
+}
+
+.secondSec > h1 {
+  color: var(--Soft-orange);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.article-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-sec > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.article-sec > div:last-of-type {
+  padding: 0;
+  border-bottom: 0;
+}
+
+.article-sec > div > h2 > a {
+  font-size: 1.2rem;
+  color: var(--Off-white);
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.article-sec > div > h2 > a:hover {
+  color: var(--Soft-orange);
+}
+
+
+/* Group2 starts here */
+.group2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  width: 100%;
+  gap: 3rem;
+}
+
+.group2 > section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.group2 > section > img {
+  width: 6rem;
+}
+
+.group2 > section > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.group2 > section > article > h1 {
+  font-size: 2.5rem;
+  color: var(--Grayish-blue);
+}
+
+.group2 > section > article > h2 > a {
+  color: var(--Very-dark-blue);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+
+}
+
+.group2 > section > article > h2 > a:hover {
+  color: var(--Soft-red);
+}
+
+.group2 > section > article > p {
+  color: var(--Dark-grayish-blue);
+  line-height: 1.3rem;
+}
+
+.openMenu {
+  display: none;
+}
+
+.closeMenu {
+  display: none;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 992px) {
+  .group2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .group2 {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    gap: 3.5rem;
+  }
+
+  .group1 {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .firstSec {
+    width: 100%;
+  }
+
+  .secondSec {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  body {
+    position: relative;
+  }
+
+  .firstSec > section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .firstSec > section > div {
+    gap: 1.5rem;
+  }
+
+  .attribution {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  ul {
+    position: fixed;
+    flex-direction: column;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: flex-start;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    gap: 1.8rem;
+    z-index: 99;
+    width: 70%;
+  }
+
+  nav > ul > li > a {
+    color: var(--Very-dark-blue);
+  }
+
+  .openMenu {
+    display: block;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--Very-dark-blue);
+    transition: 0.3s ease-in-out;
+  }
+
+  .openMenu:hover {
+    color: var(--Dark-grayish-blue);
+  }
+
+  .closeMenu {
+    font-size: 2.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .closeMenu:hover {
+    color: var(--Soft-red);
+  }
+
+  .modal-bg {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.561);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .modal-bg {
+    display: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  .active .modal-bg {
+    display: block;
+  }
+
+  .active ul {
+    display: inline-flex;
+  }
+
+  .active .closeMenu {
+    display: block;
+  }
+}
